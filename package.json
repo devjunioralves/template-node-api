@@ -4,10 +4,19 @@
   "main": "index.js",
   "author": "Junior Alves <jrwanderley17@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "yarn lint -- --fix",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "test:watch": "yarn test -- --watch",
+    "test:staged": "yarn test -- --findRelatedTests",
+    "test:coverage": "yarn test -- --coverage"
+  },
   "dependencies": {
     "module-alias": "^2.2.2"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.0",
     "@types/module-alias": "^2.0.1",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
@@ -17,7 +26,9 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "jest": "^29.5.0",
     "prettier": "^2.8.7",
+    "ts-jest": "^29.0.5",
     "typescript": "*"
   }
 }
