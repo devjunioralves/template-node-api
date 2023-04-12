@@ -1,16 +1,14 @@
 module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
-  coverageDirectory: "coverage",
-  coverageProvider: "babel",
+  coverageDirectory: 'coverage',
+  coverageProvider: 'babel',
   moduleNameMapper: {
-    "@/tests/(.+)": "<rootDir>/tests/$1",
-    "@/(.+)": "<rootDir>/src/$1",
+    '@/tests/(.+)': '<rootDir>/tests/$1',
+    '@/(.+)': '<rootDir>/src/$1',
   },
-  roots: [
-    "<rootDir>/src",
-    "<rootDir>/tests"
-  ],
+  roots: ['<rootDir>/src', '<rootDir>/tests'],
   transform: {
-    "\\.ts$": "ts-jest",
-  }
-};
+    '\\.ts$': 'ts-jest',
+  },
+  preset: '@shelf/jest-mongodb',
+}
