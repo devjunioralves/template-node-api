@@ -20,15 +20,15 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "module-alias": "^2.2.2",
+    "module-alias": "^2.2.3",
     "mongodb": "^5.2.0"
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^4.1.7",
     "@types/jest": "^29.5.0",
-    "@types/module-alias": "^2.0.1",
+    "@types/module-alias": "^2.0.4",
     "@types/mongodb": "^4.0.7",
-    "@types/node": "^18.15.11",
+    "@types/node": "^22.5.1",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.8.0",
