@@ -13,11 +13,7 @@
       "@/tests/*": ["../tests/*"]
     },
     "esModuleInterop": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "noImplicitAny": true
+    "strict": true
   },
   "include": ["src"]
 }
